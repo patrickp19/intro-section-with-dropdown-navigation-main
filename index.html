@@ -1,39 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Features
-  Company
-  Careers
-  About
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 5rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="hide-mobile-nav">
+      <a class="logo-container" href="#"
+        ><img class="logo" src="./images/logo.svg" alt=""
+      /></a>
+      <img class="hamburger" src="./images/icon-menu.svg" alt="" />
+      <div class="darken"></div>
+      <ul class="nav">
+        <div class="nav-list left-nav flow-content flex">
+          <li class="nav-item-list-container" data-visible="false">
+            <button class="drop-down-btn">
+              <span>Features</span>
 
-  Login
-  Register
+              <img
+                class="drop-down-arrow"
+                src="./images/icon-arrow-down.svg"
+                alt="drop-down"
+                role="button"
+              />
+            </button>
+            <ul class="drop-down-list features">
+              <li>
+                <img src="./images/icon-todo.svg" alt="" />
+                <p>Todo List</p>
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" alt="" />
+                <p>Calendar</p>
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" alt="" />
+                <p>Reminders</p>
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" alt="" />
+                <p>Planning</p>
+              </li>
+            </ul>
+          </li>
 
-  Make remote work
+          <li class="nav-item-list-container" data-visible="false">
+            <button class="drop-down-btn">
+              <span>Company</span>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+              <img
+                class="drop-down-arrow"
+                src="./images/icon-arrow-down.svg"
+                alt="drop-down"
+                role="button"
+              />
+            </button>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <ul class="drop-down-list company">
+              <li>
+                <p>History</p>
+              </li>
+              <li>
+                <p>Our Team</p>
+              </li>
+              <li>
+                <p>Blog</p>
+              </li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </div>
+        <div class="nav-list right-nav flex">
+          <li>Login</li>
+          <li><a class="btn btn--secondary" href="#">Register</a></li>
+        </div>
+      </ul>
+    </nav>
+    <main>
+      <div class="content-container">
+        <div class="hero">
+          <div class="hero-img"></div>
+          <!-- <img src="./images/image-hero-mobile.png" alt="" /> -->
+        </div>
+        <div class="main-content flow-content">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <a class="btn cta" href="#">Learn more</a>
+          <ul>
+            <li><img src="./images/client-databiz.svg" alt="" /></li>
+            <li><img src="./images/client-audiophile.svg" alt="" /></li>
+            <li><img src="./images/client-meet.svg" alt="" /></li>
+            <li><img src="./images/client-maker.svg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="github.com/patrickp19">Patrick P</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
