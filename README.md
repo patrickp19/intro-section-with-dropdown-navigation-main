@@ -47,12 +47,11 @@ Users should be able to:
 
 ### What I learned
 
-Height does not know height of parent so height: 100% will not work with transitions especially if the children are also changing heights
-Instead use max-height for transitions
+-Height does not know height of parent so height: 100% will not work with transitions especially if the children are also changing heights. Instead use max-height for transitions
 
-scale() does not affect the height of an element
+-scale() does not affect the height of an element
 
-A combination of background-image, aspect-ratio, background-size, background-position, flex-basis, and background-repeat: none can be used to create a background-image and allow for the image url to be modifiable from css
+-A combination of background-image, aspect-ratio, background-size, background-position, flex-basis, and background-repeat: none can be used to create a background-image and allow for the image url to be modifiable from css
 
 ```js
 // traverse child
