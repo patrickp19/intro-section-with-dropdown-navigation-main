@@ -343,7 +343,7 @@ button {
     width: 100%;
     flex-direction: row;
   }
-  .hamburger {
+  .hamburger-container {
     display: none;
   }
   .nav {
@@ -392,10 +392,6 @@ button {
 
   /* content */
 
-  .darken {
-    display: none;
-  }
-
   .features {
     right: 0;
   }
@@ -429,7 +425,7 @@ button {
     background-size: contain;
     background-position: 80% 50%;
     /* aspect-ratio: 1 /0.75; */
-    aspect-ratio: 1 /0.85;
+    /* aspect-ratio: 1 /0.85; */
     aspect-ratio: 1/1.1;
     /* width: max-content; */
   }
@@ -453,7 +449,7 @@ button {
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1350px) {
   .hero-img {
     aspect-ratio: 1 /0.85;
   }
