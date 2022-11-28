@@ -135,7 +135,7 @@ nav {
 }
 .nav-item-list-container button {
   cursor: pointer;
-  margin-bottom: 0.4rem;
+  /*margin-bottom: 0.4rem;*/
 }
 
 .nav-list {
